@@ -19,11 +19,11 @@ int main(void)
 
 	float floatnum;
 
-	printf("Size of a char : %d", sizeoff(char));
-	printf("Size of a int : %d", sizeoff(int));
-	printf("Size of a long : %d", sizeoff(long));
-	printf("Size of a long int : %d", sizeoff(long int));
-	printf("Size of a long long int : %d", sizeoff(long long int));
-	printf("Size of a float : %d", sizeoff(float));
+	printf("Size of a char : %d byte(s)", sizeof(charnum));
+	printf("Size of a int : %d byte(s)", sizeof(intnum));
+	printf("Size of a long : %d byte(s)", sizeof(longnum));
+	printf("Size of a long int : %d byte(s)", sizeof(long_intnum));
+	printf("Size of a long long int : %d byte(s)", sizeof(long_longintnum));
+	printf("Size of a float : %d bytes", sizeof(floatnum));
 	return (1);
 }
