@@ -7,6 +7,18 @@
 
 int main(void)
 {
+	char charnum;
+
+	int intnum;
+
+	long longnum;
+
+	long int long_intnum;
+
+	long long int long_longintnum;
+
+	float floatnum;
+
 	printf("Size of a char : %d", sizeoff(char));
 	printf("Size of a int : %d", sizeoff(int));
 	printf("Size of a long : %d", sizeoff(long));
