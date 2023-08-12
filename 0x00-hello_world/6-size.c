@@ -1,29 +1,31 @@
-#include<stdio.h>
- /*
+#include <stdio.h>
+
+ /**
+  *
   * main - Entry point
   *
-  * Rerurn: Always 0 (Success)
+  * Return: Always 0 (Success)
   */
 
 int main(void)
 {
-	char charnum;
+char charnum;
 
-	int intnum;
+int intnum;
 
-	long longnum;
+long longnum;
 
-	long int long_intnum;
+long int longint;
 
-	long long int long_longintnum;
+long long int B;
 
-	float floatnum;
+float floatnum;
 
-	printf("Size of a char : %d byte(s)\n", sizeof(charnum));
-	printf("Size of an int : %d byte(s)\n", sizeof(intnum));
-	printf("Size of a long : %d byte(s)\n", sizeof(longnum));
-	printf("Size of a long int : %d byte(s)\n", sizeof(long_intnum));
-	printf("Size of a long long int : %d byte(s)\n", sizeof(long_longintnum));
-	printf("Size of a float : %d bytes\n", sizeof(floatnum));
-	return (0);
+printf("Size of a char : %lu byte(s)\n", (unsigned long)sizeof(charnum));
+printf("Size of an int : %lu byte(s)\n", (unsigned long)sizeof(intnum));
+printf("Size of a long : %lu byte(s)\n", (unsigned long)sizeof(longnum));
+printf("Size of a long int : %lu byte(s)\n", (unsigned long)sizeof(longint));
+printf("Size of a long long int : %lu byte(s)\n", (unsigned long) sizeof(B));
+printf("Size of a float : %d bytes\n", (unsigned long)sizeof(floatnum));
+return (0);
 }
