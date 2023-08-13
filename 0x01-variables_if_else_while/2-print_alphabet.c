@@ -15,7 +15,6 @@ int main(void)
 	putchar(alpbt);
 
 	}
-	
 	putchar('\n');
 
 	return (0);
