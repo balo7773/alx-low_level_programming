@@ -12,7 +12,7 @@ int main(void)
 	for (alpbt = 'a'; alpbt <= 'z'; alpbt++)
 	{
 
-	putchar(me);
+	putchar(alpbt);
 
 	}
 
