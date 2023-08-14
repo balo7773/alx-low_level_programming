@@ -11,7 +11,7 @@ int main(void)
 
 	for (alpbt = 'a'; alpbt <= 'z'; alpbt++)
 	{
-	if (alpbt != 'q' && alpbt <= 'e')
+	if (alpbt != 'q' && alpbt != 'e')
 	{
 	putchar(alpbt);
 
