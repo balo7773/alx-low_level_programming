@@ -19,6 +19,11 @@ int main(void)
 			putchar(' ');
 		}
 
+		if (num == 9)
+		{
+			putchar('\n');
+		}
+
 	}
 
 	return (0);
