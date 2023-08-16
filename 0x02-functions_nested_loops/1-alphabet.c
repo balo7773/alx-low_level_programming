@@ -1,12 +1,12 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	int letter;
 
@@ -17,6 +17,5 @@ int main(void)
 		letter++;
 	}
 
-	_putchar('\n');
-	return (0);
+	_putchar('\n');;
 }
