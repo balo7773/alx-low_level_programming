@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
  * print_alphabet_x10 - printing the alphabet 10 times
  * main - Entry point
@@ -11,7 +11,7 @@ void print_alphabet_x10(void)
 	int cha = 97;
 	int no = 1;
 
-	while (n < 11)
+	while (no < 11)
 	{
 		while (cha <= 122)
 		{
