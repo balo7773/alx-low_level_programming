@@ -1,6 +1,7 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
+ * print_alphabet - functions to list alphabets
  * main - Entry point
  *
  * Return: Always 0 (success)
@@ -8,7 +9,7 @@
 
 void print_alphabet(void)
 {
-	int letter;
+	int letter = 97;
 
 	while (letter <= 122)
 	{
@@ -17,5 +18,5 @@ void print_alphabet(void)
 		letter++;
 	}
 
-	_putchar('\n');;
+	_putchar('\n');
 }
