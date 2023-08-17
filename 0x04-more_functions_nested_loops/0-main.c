@@ -1,19 +1,18 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * _isupper - a function to check for uppercase
- * main - Entry point
- * @c: the variable to check
- * Return: Always 0 (success)
+ * main - check the code.
+ *
+ * Return: Always 0.
  */
-
-int _isupper(int c)
+int main(void)
 {
-	char c;
+    char c;
 
-	if (c >= 'A' && c <= 'Z')
-	{
-	return (1);
-	}
-
-	return (0);
+    c = 'A';
+    printf("%c: %d\n", c, _isupper(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isupper(c));
+    return (0);
 }
