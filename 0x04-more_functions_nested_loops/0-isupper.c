@@ -3,14 +3,13 @@
  * _isupper - a function to check for uppercase
  * main - Entry point
  * @c: the variable to check
- * Return: Always 0 (success)
+ * Return: Always 1 for uppercase else 0 (success)
  */
 
 int _isupper(int c)
 {
-	char c;
 
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 65 && c <= 90)
 	{
 	return (1);
 	}
