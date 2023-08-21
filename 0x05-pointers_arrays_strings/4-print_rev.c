@@ -1,21 +1,28 @@
 #include "main.h"
 /**
- * print_rev
- * @s: the pointer to be used
- * Return: Always 0 (success)
+ * print_rev - string in reverse order
+ * @s: pointer string
+ * Return: void type dont return
  */
 void print_rev(char *s)
 {
-	int neg = 0;
+	int neg;
+	int i;
 
-	while (s[neg])
+	neg = 0;
+
+	while (*s != '\0')
 	{
 		neg++;
+		s++;
 	}
-	while (neg--)
+	s--;
+
+
+	for  (i = neg; i > 0; i--)
 	{
-		_putchar(s[neg]);
+		_putchar(*s);
+		s--;
 	}
 	_putchar("\n");
 }
-		
