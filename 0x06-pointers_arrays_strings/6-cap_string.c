@@ -11,11 +11,11 @@ char *cap_string(char *caps)
 	int j;
 	char lower;
 
-	char str[13] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+	char str[14] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125, '0'};
 
 	for (i = 0; caps[i]; i++)
 	{
-		for (j = 0; j < 13; j++)
+		for (j = 0; j < 14; j++)
 		{
 			lower = (caps[i] >= 97 && caps[i] <= 122);
 
