@@ -6,15 +6,8 @@
  * @argv: pointer to a char datatype
  * Return: Always 0 (success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char __attribute__((__unused__)) *argv[])
 {
-	int n;
-
-	n = 0;
-	while (n < argc)
-	{
-		printf("%s\n", argv[n]);
-		n++;
-	}
+	printf("%d\n", argc - 1);
 	return (0);
 }
