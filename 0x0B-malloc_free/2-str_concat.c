@@ -28,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 
 	sum = i + j;
 
-	concat = (char *)malloc(sum + 1);
+	concat = (char *)malloc(sum);
 	if (concat == NULL)
 	{
 		return (NULL);
