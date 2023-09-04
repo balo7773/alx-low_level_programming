@@ -28,9 +28,10 @@ char *str_concat(char *s1, char *s2)
 
 	sum = i + j;
 
-	concat = (char *)malloc(sum);
+	concat = (char *)malloc(sum + 1);
 	if (concat == NULL)
 	{
+		free(concat);
 		return (NULL);
 	}
 	for (i = 0; s1[i] != '\0'; i++)
