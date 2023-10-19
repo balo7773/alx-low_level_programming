@@ -1,5 +1,4 @@
-include "lists.h"
-
+#include "lists.h"
 /**
  * free_list - frees up all the memory allocated for a list
  * @head: pointer to a node on the list
