@@ -8,18 +8,16 @@
 
 void print_alphabet_x10(void)
 {
-	int cha = 97;
-	int no = 1;
+	int i;
+	int j;
 
-	while (no < 11)
+	for (i = 0; i < 10; i++)
 	{
-		while (cha <= 122)
+		for(j = 97; j <= 122; j++)
 		{
-			_putchar(cha);
-
-			cha++;
+			_putchar(j);
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
 
