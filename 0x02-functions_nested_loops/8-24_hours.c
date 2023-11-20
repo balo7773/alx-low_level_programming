@@ -38,3 +38,25 @@ void jack_bauer(void)
 		}
 	}
 }
+/**
+ * print_no - func to output no
+ * @n: int datatype
+ * return: void
+ */
+void print_no(int n)
+{
+	int a;
+	int l;
+
+	if (n < 10)
+	{
+		_putchar('0' + n);
+	}
+	else
+	{
+		a = n / 10;
+		l = n % 10;
+		_putchar(48 + a);
+		_putchar(48 + l);
+	}
+}

@@ -16,41 +16,44 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			k = i * j;
-            		if (j == 0)
-            		{
-				_putchar('0' + k);
+			if (k == 0)
+			{
+				_putchar(48 + k);
+				_putchar(',');
+				_putchar(' ');
 			}
-			else
+			if (k < 10 && k != 0 && j != 9 && i != 9)
+			{
+				_putchar('0' + k);
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+			}
+			else if (k > 9 && j != 9 && i < 9)
+			{
+				print_no(k);
+				_putchar(',');
+				_putchar(' ');
+			}
+			else if (k > 9 && j == 9)
 			{
 				print_no(k);
 			}
-
-			if (j < 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-            		}
-			if (j < 9 && k > 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
 		}
-
-		_putchar('$');
 		_putchar('\n');
     	}
 }
+
 /**
  * print_no - func to output no
- *
+ * @n: int datatype
  * return: void
  */
 void print_no(int n)
 {
 	int k;
 	int l;
+
 	if (n < 10)
 	{
 		_putchar('0' + n);
@@ -60,6 +63,6 @@ void print_no(int n)
 		k = n / 10;
 		l = n % 10;
 		_putchar(48 + k);
-		_putchar(48 +l);
+		_putchar(48 + l);
 	}
 }
